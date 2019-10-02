@@ -1,0 +1,43 @@
+.grid{
+  display: grid;
+  grid-template-areas: "head head"
+                       "lista lista"
+                       "title title"
+                       "left right"
+                       "noob pro"
+                       "foot foot";
+}
+.gridT1{
+  grid-area: head;
+}
+.gridForm{
+  grid-area: lista;
+}
+
+.gridT2{
+  grid-area: title;
+}
+
+.gridL{
+  grid-area: left;
+}
+
+.gridR{
+  grid-area: right;
+}
+
+.gridTF{
+  grid-area: foot;
+}
+
+.gridB{
+  grid-area: noob;
+}
+
+.gridP{
+  grid-area: pro;
+}
+
+.refjug{grid-template-areas: "img inf";}
+.imgu{grid-area: img;}
+.infi{grid-area: inf;}

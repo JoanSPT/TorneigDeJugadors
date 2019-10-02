@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jugadors de padel</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/formulario.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+  </head>
+  <body>
+    <div class="grid">
+    <div class="gridT1">
+      <h2>Registre de jugadors</h2>
+    </div>
+    <div class="gridForm">
+    <p>Dades personals</p>
+    <form class="" action="frm_players.html" method="post">
+      <div class="raw1">
+        <label>nom </label>
+        <input type="text" id="nom" name="nom" values="">
+        <label>llinatge </label>
+        <input type="text" id="llinatge" name="llinatge" values="">
+        <label>DNI </label>
+        <input type="text" id="NIF" name="NIF" values="">
+        <label>Data naixement </label>
+        <input type="text" id="DatNa" name="DatNa" values="">
+      </div>
+      <div class="raw2">
+        <label>telefon </label>
+        <input type="text" id="telefon" name="telefon" values="">
+        <label>email </label>
+        <input type="text" id="email" name="email" values="">
+        <label>Quota </label>
+        <input type="text" id="quota" name="quota" values="">
+        <label>tipus de jugador </label>
+          <select name="typeplayer" id="typeplayer" values="">
+            <option id="Begginer" value="Begginer">Begginer</option>
+            <option id="Professional" value="Professional">Professional</option>
+          </select>
+      </div>
+      <button type="button" id="boton" class="button" name="button" onclick="checkform()">participar</button>
+    </form>
+    </div>
+
+    <div class="gridT2">
+      <h2>Llista de jugadors</h2>
+    </div>
+
+    <div id="prin" class="gridL">
+      <h3>Principals</h3>
+    </div>
+
+    <div class="gridB" id="gridB">
+    </div>
+
+
+    <div id="pro" class="gridR">
+      <h3>Professionals</h3>
+    </div>
+
+    <div class="gridP" id="gridP">
+    </div>
+
+    <p class="gridTF">Diseñado por Joan Sebastia Peña Torres - 2019</p>
+  </div>
+  </body>
+</html>
